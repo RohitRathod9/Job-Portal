@@ -24,7 +24,7 @@ const _dirname = path.resolve();
 // Middleware configuration
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: "https://job-portal-ekrk.onrender.com",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
