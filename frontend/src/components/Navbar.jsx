@@ -14,7 +14,7 @@ const Navbar = () => {
         </div>
         <div className="links">
           <ul>
-            <li>
+            <li> 
               <Link to={"/"} onClick={() => setShow(!show)}>
                 HOME
               </Link>

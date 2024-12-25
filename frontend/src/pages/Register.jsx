@@ -97,7 +97,7 @@ const Register = () => {
           <form onSubmit={handleRegsiter}>
             <div className="wrapper">
               <div className="inputTag">
-                <label>Register As</label>
+                {/* <label>Register As</label> */}
                 <div>
                   <select
                     value={role}
@@ -111,11 +111,11 @@ const Register = () => {
                 </div>
               </div>
               <div className="inputTag">
-                <label>Name</label>
+                {/* <label>Name</label> */}
                 <div>
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
@@ -125,11 +125,11 @@ const Register = () => {
             </div>
             <div className="wrapper">
               <div className="inputTag">
-                <label>Email Address</label>
+                {/* <label>Email Address</label> */}
                 <div>
                   <input
                     type="email"
-                    placeholder="youremail@gmail.com"
+                    placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
@@ -137,11 +137,11 @@ const Register = () => {
                 </div>
               </div>
               <div className="inputTag">
-                <label>Phone Number</label>
+                {/* <label>Phone Number</label> */}
                 <div>
                   <input
                     type="number"
-                    placeholder="111-222-333"
+                    placeholder="Phone"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                   />
@@ -151,11 +151,11 @@ const Register = () => {
             </div>
             <div className="wrapper">
               <div className="inputTag">
-                <label>Address</label>
+                {/* <label>Address</label> */}
                 <div>
                   <input
                     type="text"
-                    placeholder="Your Address"
+                    placeholder="Address"
                     value={address}
                     onChange={(e) => setAddress(e.target.value)}
                   />
@@ -163,11 +163,11 @@ const Register = () => {
                 </div>
               </div>
               <div className="inputTag">
-                <label>Password</label>
+                {/* <label>Password</label> */}
                 <div>
                   <input
                     type="password"
-                    placeholder="Your Password"
+                    placeholder="Password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />

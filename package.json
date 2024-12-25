@@ -4,10 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+   "start": "nodemon backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend  "
   },
-  "author": "",
+  "author": "Rohit Rathod",
   "license": "ISC",
   "description": "",
   "dependencies": {

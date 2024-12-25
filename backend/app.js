@@ -9,10 +9,13 @@ import userRouter from "./routes/userRouter.js";
 import jobRouter from "./routes/jobRouter.js";
 import applicationRouter from "./routes/applicationRouter.js";
 import { newsLetterCron } from "./automation/newsLetterCron.js";
+import path from "path";
 
 
 const app = express();
 config({ path: "./config/config.env" });
+
+const _dirname=path.resolve();
 
 app.use(
   cors({
@@ -40,5 +43,11 @@ app.use("/api/v1/application", applicationRouter);
 newsLetterCron()
 connection();
 app.use(errorMiddleware);
+
+app.use(express.static(path.join(_dirname,"/frontend/dist")));
+app.get('*',(req,res)=>{
+  res.sendFile(path.resolve(_dirname,"frontend","dist","index,html"));
+});
+
 
 export default app;

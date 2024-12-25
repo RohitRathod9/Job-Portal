@@ -7,7 +7,7 @@ import { clearAllUserErrors, login } from "../store/slices/userSlice";
 import { toast } from "react-toastify";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { RiLock2Fill } from "react-icons/ri";
+import { RiLock2Fill } from "react-icons/ri"; 
 
 const Login = () => {
   const [role, setRole] = useState("");
@@ -49,7 +49,7 @@ const Login = () => {
           </div>
           <form onSubmit={handleLogin}>
             <div className="inputTag">
-              <label>Login As</label>
+              {/* <label>Login As</label> */}
               <div>
                 <select value={role} onChange={(e) => setRole(e.target.value)}>
                   <option value="">Select Role</option>
@@ -60,11 +60,11 @@ const Login = () => {
               </div>
             </div>
             <div className="inputTag">
-              <label>Email</label>
+              {/* <label>Email</label> */}
               <div>
                 <input
                   type="email"
-                  placeholder="youremail@gmail.com"
+                  placeholder="Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
@@ -72,11 +72,11 @@ const Login = () => {
               </div>
             </div>
             <div className="inputTag">
-              <label>Password</label>
+              {/* <label>Password</label> */}
               <div>
                 <input
                   type="password"
-                  placeholder="Your Password"
+                  placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
